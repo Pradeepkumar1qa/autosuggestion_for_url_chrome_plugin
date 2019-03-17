@@ -1,0 +1,21 @@
+{   
+	"manifest_version":2,
+	"name":"pradeep_apps",
+	"version":"0.002",
+	"content_scripts":[
+      {
+      	"matches":["<all_urls>"],
+      	"js":["bookmark.js"]
+      }
+	],
+   "permissions": [
+       "storage","tabs"
+       
+  ],
+	"browser_action": {
+         
+          "default_title": "copy and paste",      // optional; shown in tooltip
+          "default_popup": "popup.html"        // optional
+        }
+      
+}
